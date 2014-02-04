@@ -1,7 +1,7 @@
 BoostYii
 ========
 
-This is a yii2 extension code by zephir language,if u install this extension on your php machine , u will get better yii2 web performance.  
+This is a php extension code by zephir language,if u install this extension on your php machine , u will get better yii2 web performance.  
 
 This is a funny project just for me or demo , I will not continue develpment this project.
 
