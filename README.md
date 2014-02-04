@@ -40,42 +40,43 @@ If u build boostyii success, u need add extension=boostyii.so after extension=js
 Is it easy ?
 
 ## Benchmark ##
-CPU : Intel core2 E6750
-OS : CentOS 6.5 64bit
-PHP : 5.4.24
+
+- CPU : Intel core2 E6750
+- OS : CentOS 6.5 64bit
+- PHP : 5.4.24
 
 I use yii2 alpha and create a project from basic template,then create a index-boost.php use yiiboost. then use ab to test benchmark.... **9% faster !!!!!!**
 
-ab -c 10 -t 10 http://localhost/boostyii/index.php
-
-Document Path:          /boostyii/index.php
-Document Length:        11208 bytes
-
-Concurrency Level:      10
-Time taken for tests:   10.000 seconds
-Complete requests:      2336
-Failed requests:        0
-Write errors:           0
-Total transferred:      27447386 bytes
-HTML transferred:       26190080 bytes
-Requests per second:    233.60 [#/sec] (mean)
-Time per request:       42.809 [ms] (mean)
-Time per request:       4.281 [ms] (mean, across all concurrent requests)
-Transfer rate:          2680.37 [Kbytes/sec] received
-
-ab -c 10 -t 10 http://localhost/boostyii/index-boost.php
-
-Document Path:          /boostyii/index-boost.php
-Document Length:        11244 bytes
-
-Concurrency Level:      10
-Time taken for tests:   10.002 seconds
-Complete requests:      2545
-Failed requests:        0
-Write errors:           0
-Total transferred:      29993920 bytes
-HTML transferred:       28624172 bytes
-Requests per second:    254.44 [#/sec] (mean)
-Time per request:       39.302 [ms] (mean)
-Time per request:       3.930 [ms] (mean, across all concurrent requests)
-Transfer rate:          2928.40 [Kbytes/sec] received
+    ab -c 10 -t 10 http://localhost/boostyii/index.php
+    
+    Document Path:  /boostyii/index.php
+    Document Length:11208 bytes
+    
+    Concurrency Level:  10
+    Time taken for tests:   10.000 seconds
+    Complete requests:  2336
+    Failed requests:0
+    Write errors:   0
+    Total transferred:  27447386 bytes
+    HTML transferred:   26190080 bytes
+    Requests per second:233.60 [#/sec] (mean)
+    Time per request:   42.809 [ms] (mean)
+    Time per request:   4.281 [ms] (mean, across all concurrent requests)
+    Transfer rate:  2680.37 [Kbytes/sec] received
+    
+    ab -c 10 -t 10 http://localhost/boostyii/index-boost.php
+    
+    Document Path:  /boostyii/index-boost.php
+    Document Length:11244 bytes
+    
+    Concurrency Level:  10
+    Time taken for tests:   10.002 seconds
+    Complete requests:  2545
+    Failed requests:0
+    Write errors:   0
+    Total transferred:  29993920 bytes
+    HTML transferred:   28624172 bytes
+    Requests per second:254.44 [#/sec] (mean)
+    Time per request:   39.302 [ms] (mean)
+    Time per request:   3.930 [ms] (mean, across all concurrent requests)
+    Transfer rate:  2928.40 [Kbytes/sec] received
