@@ -45,7 +45,7 @@ Is it easy ?
 - OS : CentOS 6.5 64bit
 - PHP : 5.4.24 with APC
 
-I use yii2 alpha and create a project from basic template,then create a index-boost.php use yiiboost. then use ab to test benchmark.... **9% faster !!!!!!**
+I use yii2 alpha and create a project from basic template,then create an index-boost.php use yiiboost. then use ab to test benchmark.... **9% faster !!!!!!**
 
     ab -c 10 -t 10 http://localhost/boostyii/index.php
     
