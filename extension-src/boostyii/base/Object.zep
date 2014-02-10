@@ -1,6 +1,6 @@
 namespace boostyii\base;
 
-class Object implements \boostyii\base\Arrayable {
+class Object implements Arrayable {
 	public static function className()
 	{
 		return get_called_class();
