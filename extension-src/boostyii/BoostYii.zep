@@ -1,9 +1,7 @@
 namespace boostyii;
 
-class BoostYii {
-	
-
-
+class BoostYii
+{
 	/**
 	 * @see BaseYii::getObjectVars()
 	 */
